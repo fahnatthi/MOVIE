@@ -1,0 +1,109 @@
+<ons-page id="search">
+    <div class="tabbar tabbar--top tabbar--top-border">
+        <label class="tabbar__item tabbar--top-border__item">
+            <input type="radio" name="top-tabbar-b" checked="checked">
+            <button class="tabbar__button tabbar--top-border__button">
+                Action
+            </button>
+        </label>
+
+        <label class="tabbar__item tabbar--top-border__item">
+            <input type="radio" name="top-tabbar-b">
+            <button class="tabbar__button tabbar--top-border__button">
+                Series
+            </button>
+        </label>
+
+        <label class="tabbar__item tabbar--top-border__item">
+            <input type="radio" name="top-tabbar-b">
+            <button class="tabbar__button tabbar--top-border__button">
+                Crime
+            </button>
+        </label>
+
+        <label class="tabbar__item tabbar--top-border__item">
+            <input type="radio" name="top-tabbar-b">
+            <button class="tabbar__button tabbar--top-border__button">
+                Comedies
+            </button>
+        </label>
+
+    </div>
+
+    <p style="text-align: center; margin-top: 10px;">
+        <ons-search-input placeholder="Search" onchange="ons.notification.alert('Searched for: ' + this.value)">
+        </ons-search-input>
+
+    </p>
+
+    <div class="movie_list">
+        Top Cast
+        <ons-carousel auto-refresh swipeable overscrollable item-width="150px">
+            <ons-carousel-item modifier="nodivider" id="Movie 1" onclick="openMovieDetails(this.id)">
+                <img src="assets/img/1.jpg">
+            </ons-carousel-item>
+            <ons-carousel-item modifier="nodivider" id="Movie 2" onclick="openMovieDetails(this.id)">
+                <img src="assets/img/2.jpg">
+            </ons-carousel-item>
+            <ons-carousel-item modifier="nodivider" id="Movie 3" onclick="openMovieDetails(this.id)">
+                <img src="assets/img/3.jpg">
+            </ons-carousel-item>
+            <ons-carousel-item modifier="nodivider" id="Movie 4" onclick="openMovieDetails(this.id)">
+                <img src="assets/img/4.jpg">
+            </ons-carousel-item>
+            <ons-carousel-item modifier="nodivider" id="Movie 5" onclick="openMovieDetails(this.id)">
+                <img src="assets/img/5.jpg">
+            </ons-carousel-item>
+        </ons-carousel>
+    </div>
+
+    <br>
+    </br>
+
+    <div class="movie_list">
+        Top Popular
+        <ons-carousel auto-refresh swipeable overscrollable item-width="150px">
+            <ons-carousel-item modifier="nodivider">
+                <img src="assets/img/dragon.jpg">
+            </ons-carousel-item>
+            <ons-carousel-item modifier="nodivider">
+                <img src="assets/img/kingman.jpg">
+            </ons-carousel-item>
+            <ons-carousel-item modifier="nodivider">
+                <img src="assets/img/blackwidow.jpg">
+            </ons-carousel-item>
+            <ons-carousel-item modifier="nodivider">
+                <img src="assets/img/fast8.jpg">
+            </ons-carousel-item>
+            <ons-carousel-item modifier="nodivider">
+                <img src="assets/img/aquaman.jpg">
+            </ons-carousel-item>
+        </ons-carousel>
+    </div>
+
+    <br>
+    </br>
+
+    <div class="movie_list">
+        Top Series
+        <ons-carousel auto-refresh swipeable overscrollable item-width="150px">
+            <ons-carousel-item modifier="nodivider" >
+                <img src="assets/img/The witcher.jpg">
+            </ons-carousel-item>
+            <ons-carousel-item modifier="nodivider">
+                <img src="assets/img/Stranger.jpg">
+            </ons-carousel-item>
+            <ons-carousel-item modifier="nodivider">
+                <img src="assets/img/Snow.jpg">
+            </ons-carousel-item>
+            <ons-carousel-item modifier="nodivider">
+                <img src="assets/img/kingdom.jpg">
+            </ons-carousel-item>
+            <ons-carousel-item modifier="nodivider">
+                <img src="assets/img/game.jpg">
+            </ons-carousel-item>
+        </ons-carousel>
+    </div>
+
+
+</ons-page>

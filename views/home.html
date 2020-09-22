@@ -1,0 +1,51 @@
+<ons-page id="home">
+
+    <ons-navigator swipeable id="myNavigator" page="page1.html"></ons-navigator>
+    <template id="page1.html">
+        <ons-page id="Home">
+            <ons-carousel swipeable auto-scroll overscrollable id="carousel">
+                <ons-carousel-item>
+                    <div style="text-align: center; font-size: 30px; color: #fff;">
+                        <img class="img" src="assets/img/IronMan3.jpg" alt="" id="ironman">
+                    </div>
+                </ons-carousel-item>
+                <ons-carousel-item>
+                    <div style="text-align: center; font-size: 30px; color: #fff;">
+                        <img class="img" src="assets/img/spiderman.jpg" alt="" id="spiderman">
+                    </div>
+                </ons-carousel-item>
+                <ons-carousel-item>
+                    <div style=" text-align: center; font-size: 30px; color: #fff; ">
+                        <img class=" img " src=" assets/img/Frozen.jpg " alt=" " id="frozen">
+                    </div>
+                </ons-carousel-item>
+            </ons-carousel>
+
+            <div class="movie_list">
+                Popular
+                <ons-carousel auto-refresh swipeable overscrollable item-width="150px">
+                    <ons-carousel-item modifier="nodivider">
+                        <img src="assets/img/dragon.jpg">
+                    </ons-carousel-item>
+                    <ons-carousel-item modifier="nodivider">
+                        <img src="assets/img/kingman.jpg">
+                    </ons-carousel-item>
+                    <ons-carousel-item modifier="nodivider">
+                        <img src="assets/img/blackwidow.jpg">
+                    </ons-carousel-item>
+                    <ons-carousel-item modifier="nodivider">
+                        <img src="assets/img/fast8.jpg">
+                    </ons-carousel-item>
+                    <ons-carousel-item modifier="nodivider">
+                        <img src="assets/img/aquaman.jpg">
+                    </ons-carousel-item>
+                </ons-carousel>
+            </div>
+
+            <style>
+
+            </style>
+
+        </ons-page>
+    </template>
+</ons-page>
